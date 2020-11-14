@@ -1,0 +1,57 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\user\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\user\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Yarn\bin;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Users\user\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\user\Desktop\сборка\gulp_build_3\package.json: Unexpected token / in JSON at position 319
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "gulpBuild3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {
+      "browser-sync": "^2.26.3",
+      "del": "^3.0.0",
+      "gulp": "^4.0.0",
+      "gulp-autoprefixer": "^6.0.0",
+      "gulp-clean-css": "^4.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-imagemin": "^5.0.3",
+      /*"gulp-less": "^4.0.1",*/
+      "gulp-rename": "^1.4.0",
+      "gulp-sass": "^4.0.2",
+      "gulp-sourcemaps": "^2.6.5",
+      /*"gulp-stylus": "^2.7.0",*/
+      "gulp-uglify": "^3.0.1"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
