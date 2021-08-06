@@ -1,3 +1,503 @@
-@import "global";
+//@import "global";
 @import "helpers/mixins";
 @import "helpers/variables";
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl 100.otf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl 100 Italic.otf") format("truetype");
+  font-style: italic;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl 300.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl 300 Italic.otf") format("truetype");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl 900.otf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/MuseoSansCyrl 900 Italic.otf") format("truetype");
+  font-style: italic;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Natasha";
+  src: url("../fonts/Natasha.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+body {
+  font-family: MuseoSansCyrl, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 940px;
+}
+
+header {
+  background: url("../img/img__first.png");
+  height: 846px;
+
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding-top: 57px;
+
+    .portfolio__logo {
+      font-family: MuseoSansCyrl;
+      color: #c5c6c4;
+      font-size: 17px;
+      font-weight: 100;
+      font-style: normal;
+      letter-spacing: 2.04px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    span {
+      color: #FFFFFF;
+      font-size: 17px;
+      font-weight: 900;
+      font-style: normal;
+      letter-spacing: 2.04px;
+      text-align: center;
+    }
+
+    .portfolio__top {
+      font-family: MuseoSansCyrl;
+      display: flex;
+      justify-content: space-between;
+      width: 321px;
+      font-size: 15px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 1.8px;
+      text-align: center;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+
+    .portfolio__email {
+      font-family: MuseoSansCyrl;
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.56px;
+      text-align: right;
+      text-decoration: none;
+    }
+
+    .portfolio__email:after {
+      content: '';
+      display: block;
+      border: solid 1px;
+      color: #FFFFFF;
+      opacity: 0.35;
+      margin-top: 4px;
+    }
+
+  }
+
+  .portfolio__title {
+    text-align: center;
+    padding-top: 297px;
+
+    .portfolio__title_top {
+      font-family: Natasha;
+      font-size: 49px;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: 5.88px;
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+    }
+
+    .portfolio__title_bottom {
+      font-family: MuseoSansCyrl;
+      font-size: 29px;
+      font-weight: 100;
+      color: #e6e7e5;
+      text-transform: uppercase;
+    }
+  }
+
+  .portfolio__img {
+    text-align: center;
+    padding-top: 265px;
+  }
+}
+
+#aboutme {
+
+  .aboutme__wrapper {
+    display: flex;
+  }
+
+  .aboutme__logo {
+    font-family: Natasha;
+    font-size: 37px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.49;
+    letter-spacing: 4.44px;
+    text-align: left;
+    color: #22241b;
+    margin-top: 86px;
+    text-transform: uppercase;
+  }
+
+  .aboutme__background {
+
+
+
+    .aboutme__background_title {
+      font-family: Natasha;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.5;
+      letter-spacing: 2.64px;
+      text-align: left;
+      color: rgba(34, 36, 27, 0.66);
+      padding-top: 40px;
+      text-transform: uppercase;
+    }
+
+    .aboutme__background_text {
+      font-family: MuseoSansCyrl;
+      width: 432px;
+      height: 392px;
+      font-size: 15px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.8;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #22241b;
+    }
+  }
+
+  .aboutme__cover {
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+  }
+
+  .aboutme__merit {
+
+    .aboutme__merit_title {
+      font-family: Natasha;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.5;
+      letter-spacing: 2.64px;
+      text-align: left;
+      color: rgba(34, 36, 27, 0.66);
+      padding-top: 40px;
+    }
+
+    .aboutme__merit_cover {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      .aboutme__merit_wrapper {
+        text-transform: uppercase;
+      }
+
+      .about__merit_rhombus {
+        background: url("../img/third.png") no-repeat scroll;
+        width: 103px;
+        height: 103px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-family: MuseoSansCyrl;
+        font-size: 20px;
+        font-weight: 100;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.75;
+        letter-spacing: 2.4px;
+        color: #204d15;
+      }
+
+      .about__merit_text {
+        font-family: MuseoSansCyrl;
+        font-size: 12px;
+        font-weight: 100;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: 0.24px;
+        color: #22241b;
+        width: 105px;
+        height: 27px;
+        text-transform: uppercase;
+        margin-right: 54px;
+        margin-top: 25px;
+      }
+    }
+  }
+  .aboutme__connection_logo {
+    font-family: Natasha;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: 2.64px;
+    text-align: left;
+    color: rgba(34, 36, 27, 0.66);
+    padding-top: 68px;
+  }
+  .aboutme__connection {
+    display: flex;
+
+    .aboutme__list {
+      display: flex;
+      flex-direction: column;
+
+      .aboutme__link {
+        font-family: MuseoSansCyrl;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.93;
+        letter-spacing: 1.68px;
+        text-align: left;
+        color: #204d15;
+        padding-right: 43px;
+        height: 14px;
+        padding-bottom: 20px;
+      }
+    }
+    .aboutme__info {
+      display: flex;
+      text-align: center;
+      align-items: center;
+
+      .aboutme__text {
+        font-family: MuseoSansCyrl;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: oblique;
+        letter-spacing: 0.28px;
+        text-align: left;
+        color: rgba(34, 36, 27, 0.72);
+        padding-left: 20px;
+        opacity: 0.72;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+}
+
+#skills {
+
+  .skills__logo {
+    font-family: Natasha;
+    font-size: 37px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 4.44px;
+    text-align: left;
+    margin-top: 97px;
+    margin-bottom: 62px;
+  }
+
+  .skills__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills__list {
+    display: flex;
+    align-items: center;
+    margin-right: 41px;
+    text-transform: uppercase;
+
+    .skills_item {
+      background: url("../img/circle.png") no-repeat;
+      width: 61px;
+      height: 61px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding-right: 27px;
+      font-family: MuseoSansCyrl;
+      font-size: 13px;
+      font-weight: 100;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 1.56px;
+      color: #204d15;
+    }
+
+    .skills_text {
+      font-family: MuseoSansCyrl;
+      font-size: 15px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 1.8px;
+      text-align: left;
+      color: rgba(34, 36, 27, 0.89);
+    }
+
+  }
+
+
+
+
+}
+
+#work {
+
+  .work__logo {
+    font-family: Natasha;
+    font-size: 37px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 4.44px;
+    text-align: left;
+    color: #22241b;
+    margin-top: 83px;
+    margin-bottom: 60px;
+  }
+
+  .work__img {
+    display: flex;
+    justify-content: space-between;
+
+    .work__wrapper {
+      position: relative;
+    }
+
+    .work__img_item {
+    }
+
+    .work__overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.56);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      .work__overlay_text {
+        font-family: MuseoSansCyrl;
+        font-size: 15px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #fff;
+        padding-top: 130px;
+        text-transform: uppercase;
+      }
+
+      .work__overlay_link {
+        font-family: MuseoSansCyrl;
+        font-size: 13px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.26px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        padding-top: 14px;
+      }
+
+      .work__overlay_link:after {
+        content: '';
+        display: block;
+        border: solid 1px;
+        opacity: 0.5;
+        width: 60px;
+        color: #FFFFFF;
+        margin: 3px 0 0 120px
+      }
+
+    }
+
+    .work__wrapper:hover .work__overlay {
+      display: block;
+
+    }
+  }
+}
+
+.footer {
+  font-size: 11px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.54px;
+  text-align: left;
+  color: rgba(34, 36, 27, 0.66);
+  margin-top: 125px;
+  text-transform: uppercase;
+  margin-bottom: 110px;
+}
+
+
+
+
+
+
