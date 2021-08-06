@@ -58,6 +58,14 @@ body {
 
 .container {
   width: 940px;
+
+  @include r(1024) {
+    width: 100%;
+
+    @include r(768) {
+      width: 100%;
+    }
+  }
 }
 
 header {
@@ -79,6 +87,10 @@ header {
       letter-spacing: 2.04px;
       text-align: center;
       text-transform: uppercase;
+
+      @include r(768) {
+        font-size: 12px;
+      }
     }
 
     span {
@@ -88,6 +100,10 @@ header {
       font-style: normal;
       letter-spacing: 2.04px;
       text-align: center;
+
+      @include r(768) {
+        font-size: 12px;
+      }
     }
 
     .portfolio__top {
@@ -103,6 +119,10 @@ header {
       text-align: center;
       text-transform: uppercase;
       opacity: 1;
+
+      @include r(1024) {
+        display: none;
+      }
     }
 
     .portfolio__email {
@@ -114,6 +134,10 @@ header {
       letter-spacing: 1.56px;
       text-align: right;
       text-decoration: none;
+
+      @include r(768) {
+        font-size: 12px;
+      }
     }
 
     .portfolio__email:after {
@@ -141,6 +165,10 @@ header {
       color: #FFFFFF;
       text-transform: uppercase;
       padding-bottom: 15px;
+
+      @include r(768) {
+        font-size: 30px;
+      }
     }
 
     .portfolio__title_bottom {
@@ -149,6 +177,10 @@ header {
       font-weight: 100;
       color: #e6e7e5;
       text-transform: uppercase;
+
+      @include r(768) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -162,6 +194,10 @@ header {
 
   .aboutme__wrapper {
     display: flex;
+
+    @include r(768) {
+      flex-direction: column;
+    }
   }
 
   .aboutme__logo {
@@ -170,17 +206,25 @@ header {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.49;
     letter-spacing: 4.44px;
     text-align: left;
     color: #22241b;
     margin-top: 86px;
     text-transform: uppercase;
+
+    @include r(1024) {
+      font-size: 30px;
+      text-align: center;
+
+      @include r(768) {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 43px;
+      }
+    }
   }
 
   .aboutme__background {
-
-
 
     .aboutme__background_title {
       font-family: Natasha;
@@ -194,12 +238,20 @@ header {
       color: rgba(34, 36, 27, 0.66);
       padding-top: 40px;
       text-transform: uppercase;
+
+      @include r(1024) {
+        text-align: center;
+      }
+
+      @include r(768) {
+        text-align: center;
+        font-size: 18px;
+      }
     }
 
     .aboutme__background_text {
       font-family: MuseoSansCyrl;
       width: 432px;
-      height: 392px;
       font-size: 15px;
       font-weight: 300;
       font-stretch: normal;
@@ -208,6 +260,15 @@ header {
       letter-spacing: 0.3px;
       text-align: left;
       color: #22241b;
+
+      @include r(1024) {
+        text-align: center;
+      }
+
+      @include r(768) {
+        width: 100%;
+        font-size: 13px;
+      }
     }
   }
 
@@ -215,6 +276,12 @@ header {
     display: flex;
     flex-direction: column;
     padding-left: 48px;
+
+    @include r(768) {
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+    }
   }
 
   .aboutme__merit {
@@ -230,12 +297,32 @@ header {
       text-align: left;
       color: rgba(34, 36, 27, 0.66);
       padding-top: 40px;
+
+      @include r(1024) {
+        padding-top: 35px;
+        padding-left: 150px;
+      }
+
+      @include r(768) {
+        text-align: left;
+        padding: 0;
+        margin-top: 20px;
+        font-size: 18px;
+      }
     }
 
     .aboutme__merit_cover {
       display: flex;
       justify-content: space-between;
       text-align: center;
+
+      @include r(1024) {
+        text-align: center;
+      }
+
+      @include r(768) {
+        display: block;
+      }
 
       .aboutme__merit_wrapper {
         text-transform: uppercase;
@@ -258,6 +345,10 @@ header {
         line-height: 2.75;
         letter-spacing: 2.4px;
         color: #204d15;
+
+        @include r(768) {
+
+        }
       }
 
       .about__merit_text {
@@ -274,6 +365,10 @@ header {
         text-transform: uppercase;
         margin-right: 54px;
         margin-top: 25px;
+
+        @include r(768) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -288,13 +383,37 @@ header {
     text-align: left;
     color: rgba(34, 36, 27, 0.66);
     padding-top: 68px;
+
+    @include r(1024) {
+      padding-top: 35px;
+      padding-left: 170px;
+    }
+
+    @include r(768) {
+      text-align: center;
+      padding-top: 30px;
+      padding-right: 0px;
+      padding-left: 0;
+      font-size: 18px;
+    }
+
   }
   .aboutme__connection {
     display: flex;
 
+    @include r(768) {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
     .aboutme__list {
       display: flex;
       flex-direction: column;
+
+      @include r(768) {
+        display: flex;
+        align-items: center;
+      }
 
       .aboutme__link {
         font-family: MuseoSansCyrl;
@@ -302,19 +421,27 @@ header {
         font-weight: 300;
         font-stretch: normal;
         font-style: normal;
-        line-height: 3.93;
+        //line-height: 3.93;
         letter-spacing: 1.68px;
         text-align: left;
         color: #204d15;
         padding-right: 43px;
-        height: 14px;
         padding-bottom: 20px;
+
+        @include r(768) {
+          padding-right: 0;
+        }
       }
     }
     .aboutme__info {
       display: flex;
       text-align: center;
       align-items: center;
+
+      @include r(768) {
+        display: flex;
+        flex-direction: column;
+      }
 
       .aboutme__text {
         font-family: MuseoSansCyrl;
@@ -326,18 +453,14 @@ header {
         text-align: left;
         color: rgba(34, 36, 27, 0.72);
         padding-left: 20px;
-        opacity: 0.72;
+
+        @include r(768) {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
       }
     }
   }
-
-
-
-
-
-
-
-
 }
 
 #skills {
@@ -352,17 +475,39 @@ header {
     text-align: left;
     margin-top: 97px;
     margin-bottom: 62px;
+
+    @include r(1024) {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 46px;
+      margin-bottom: 31px;
+    }
   }
 
   .skills__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include r(768) {
+      width: 100%;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 15px;
+    }
   }
   .skills__list {
     display: flex;
     align-items: center;
     margin-right: 41px;
     text-transform: uppercase;
+
+    @include r(768) {
+      flex-direction: column;
+      margin: 0;
+      padding-bottom: 15px;
+    }
 
     .skills_item {
       background: url("../img/circle.png") no-repeat;
@@ -380,6 +525,12 @@ header {
       font-style: normal;
       letter-spacing: 1.56px;
       color: #204d15;
+
+      @include r(768) {
+        padding-bottom: 10px;
+        padding-right: 0;
+        text-align: center;
+      }
     }
 
     .skills_text {
@@ -391,6 +542,12 @@ header {
       letter-spacing: 1.8px;
       text-align: left;
       color: rgba(34, 36, 27, 0.89);
+
+      @include r(768) {
+        text-align: center;
+        justify-content: center;
+        font-size: 13px;
+      }
     }
 
   }
@@ -413,14 +570,32 @@ header {
     color: #22241b;
     margin-top: 83px;
     margin-bottom: 60px;
+
+    @include r(1024) {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 41px;
+      margin-bottom: 30px;
+    }
   }
 
   .work__img {
     display: flex;
     justify-content: space-between;
 
+    @include r(768) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
     .work__wrapper {
       position: relative;
+
+      @include r(768) {
+        padding-bottom: 15px;
+      }
     }
 
     .work__img_item {
@@ -494,6 +669,17 @@ header {
   margin-top: 125px;
   text-transform: uppercase;
   margin-bottom: 110px;
+
+  @include r(1024) {
+    text-align: end;
+
+    @include r(768) {
+      text-align: left;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      font-size: 9px;
+    }
+  }
 }
 
 
