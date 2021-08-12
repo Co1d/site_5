@@ -28,7 +28,7 @@ const fontsFiles = [
 gulp.task('styles', () => {
     return gulp.src(styleFiles)
         .pipe(sass())
-        .pipe(concat('style.css'))
+        // .pipe(concat('style.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['> 0.01%'],
             cascade: false

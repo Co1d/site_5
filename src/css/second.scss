@@ -1,0 +1,418 @@
+@import "global";
+
+body {
+  font-family: MuseoSansCyrl, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: url("../img/fon.png") no-repeat;
+
+  .row {
+    display: flex;
+    align-items: center;
+    background: url("../img/polosa.png") no-repeat 50% -115%;
+  }
+
+  .header__nav {
+    color: #FFFFFF;
+  }
+
+  .header__ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  header__ul:hover {
+    background: #365d71;
+    display: block;
+  }
+
+  .header__ul_li {
+    color: #FFFFFF;
+    font-family: MuseoSansCyrl;
+    font-size: 11px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: 1.1px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .header__phone {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .header__phone_link {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .header__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: MuseoSansCyrl;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.32px;
+    text-align: left;
+  }
+
+  .header__link:after {
+    content: '';
+    display: block;
+    border: dashed 1px;
+    color: #FFFFFF;
+  }
+
+  .header__span {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 90px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    letter-spacing: 41.4px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+  }
+
+  .header__title {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    letter-spacing: 10.2px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+    text-transform: uppercase;
+    margin-top: 204px;
+    margin-bottom: 168px;
+  }
+
+  .header__title_second {
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 84px;
+    margin-bottom: 41px;
+  }
+
+  .header__button_img {
+    text-align: center;
+    margin-bottom: 98px;
+  }
+
+}
+
+#partner {
+  background-color: #f7f7f7;
+
+  .partner__cover {
+    background-color: #fff;
+    margin-top: -70px;
+    margin-bottom: 79px;
+  }
+
+  .partner__logo {
+    font-family: MuseoSansCyrl;
+    font-size: 16px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+  }
+
+  .partner__logo_text {
+    font-weight: 900;
+  }
+
+  .partner__title {
+    font-family: MuseoSansCyrl;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 72px;
+  }
+
+  .partner__title_text {
+    font-size: 39px;
+    letter-spacing: 3.9px;
+    color: #23aae2;
+  }
+
+  .partner__text {
+    font-family: MuseoSansCyrl;
+    font-size: 19.5px;
+    font-weight: 100;
+    letter-spacing: 10.53px;
+    text-align: left;
+    color: #bdbdbd;
+    margin-top: 100px;
+    white-space: nowrap;
+  }
+
+  .partner__item {
+    font-family: MuseoSansCyrl;
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: 3.6px;
+    text-align: left;
+    color: #000;
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+
+  .partner__items {
+    white-space: nowrap;
+    letter-spacing: 3px;
+    color: #23aae2;
+  }
+
+  .partner__button {
+    font-family: MuseoSansCyrl;
+    font-size: 23px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: 2.76px;
+    text-align: center;
+    color: #fff;
+    background: #23aae2;
+    padding: 30px 360px 30px 350px;
+    box-shadow: 0px 3px 1px 0 rgba(159, 160, 160, 0.18);
+    white-space: nowrap;
+    border: #FFFFFF;
+    margin-bottom: 65px;
+  }
+
+  .partner__center_title {
+    font-family: MuseoSansCyrl;
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: 2.9px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.99);
+    white-space: nowrap;
+  }
+
+  .partner__wrapper {
+    box-shadow: 1px 1.7px 4px 0 rgba(149, 147, 147, 0.33);
+    background-color: #f4f4f4;
+  }
+
+  .partner__wrapper_second {
+    margin-left: 100px;
+    box-shadow: 1px 1.7px 4px 0 rgba(149, 147, 147, 0.33);
+    background-color: #f4f4f4;
+  }
+
+  .partner__wrapper_img {
+    margin-top: 87px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    text-align: center;
+  }
+
+  .partner__wrapper_title {
+    font-family: MuseoSansCyrl;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 1.68px;
+    text-align: center;
+    color: #000;
+  }
+
+  .partner__wrapper_text {
+    font-family: MuseoSansCyrl;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.32px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+}
+
+#question {
+  background: url("../img/fon__bottom.png") no-repeat;
+  background-size: cover;
+
+  .question__logo {
+    font-family: MuseoSansCyrl;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.17;
+    letter-spacing: 4.2px;
+    text-align: center;
+    color: #fff;
+    margin-top: 84px;
+    text-transform: uppercase;
+  }
+
+  .question__logo_span {
+    font-family: MuseoSansCyrl;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 1.81;
+    letter-spacing: 2.1px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .question__logo_text {
+    font-family: MuseoSansCyrl;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 1.29;
+    letter-spacing: 2.1px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .question__img {
+    margin-top: 45px;
+    margin-left: 75px;
+    margin-bottom: 30px;
+  }
+
+  .question__input {
+    padding: 15px 170px 15px 30px;
+    border-radius: 3px;
+    border: solid 1px #fff;
+    background-color: #30c2ff;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.69;
+    letter-spacing: 1.3px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.56);
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .question__button {
+    font-family: MuseoSansCyrl;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 2.33;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;
+    background: 0 0;
+    border: solid 2px #fff;
+    padding: 15px 60px 15px 60px;
+    margin-top: 20px;
+    margin-bottom: 84px;
+    border-radius: 4px;
+  }
+}
+
+footer {
+  background: url("../img/footer.png") no-repeat center bottom;
+  background-size: cover;
+
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__title {
+    font-family: MuseoSansCyrl;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.21;
+    text-align: center;
+    color: rgba(250, 247, 247, 0.76);
+  }
+
+  .footer__text {
+    font-family: MuseoSansCyrl;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.21;
+    text-align: center;
+    color: rgba(250, 247, 247, 0.76);
+    white-space: nowrap;
+  }
+
+  .footer__text_link {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  footer__text:after {
+    content: '';
+    display: block;
+    border: dashed 1px;
+    color: #FFFFFF;
+  }
+
+  .footer__phone {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__img {
+    padding-top: 14px;
+    padding-bottom: 17px;
+  }
+
+  .footer__phone_link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: MuseoSansCyrl;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.32px;
+    text-align: left;
+  }
+
+  .footer__link:after {
+    content: '';
+    display: block;
+    border: dashed 1px;
+    color: #FFFFFF;
+  }
+
+}

@@ -6,232 +6,295 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>site__fourth</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>
-        Site_third
+        Site_fourth
     </title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="portfolio">
-                <div class="portfolio__logo">
-                    My <span> Portfolio </span>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <img src="./img/compas.png">
+                    </div>
                 </div>
-                <div class="portfolio__top">
-                    <p>
-                        Обо мне
-                    </p>
-                    <p>
-                        Навыки
-                    </p>
-                    <p>
-                        Работы
-                    </p>
+                <div class="col-lg-7">
+                    <nav class="header__nav">
+                        <ul class="header__ul">
+                            <a href="#">
+                                <li class="header__ul_li">
+                                    Главная
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="header__ul_li">
+                                    О компании
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="header__ul_li">
+                                    Внж и Пмж в Болгарии
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="header__ul_li">
+                                    Недвижимость и переезд
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="header__ul_li">
+                                    Контакты
+                                </li>
+                            </a>
+                        </ul>
+                    </nav>
                 </div>
-                <div>
-                    <a class="portfolio__email" href="#">
-                        info@myname.com
+                <div class="col-lg-3">
+                    <div class="header__phone">
+                        <img src="./img/phone.png">
+                        <div class="header__phone_link">
+                            <a href="+749512321345" class="header__link">
+                                +7 (495) 12-321-345
+                            </a>
+                            <a href="+749512321345" class="header__link">
+                                +7 (495) 12-321-345
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__title">
+                        <span class="header__span">Болгария</span>
+                        <br>ждет вас
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 header__button_img">
+                    <a href="#">
+                        <img src="./img/strelka.png">
                     </a>
                 </div>
             </div>
-            <div class="portfolio__title">
-                <div class="portfolio__title_top">
-                    <span>Дело, которым я живу</span>
-                </div>
-                <div class="portfolio__title_bottom">
-                    Верстка & frontend
-                </div>
-            </div>
-            <div class="portfolio__img">
-                <img src="./img/second.png">
-            </div>
         </div>
     </header>
-    <section id="aboutme">
+    <section id="benefits">
         <div class="container">
-            <div class="aboutme__logo">
-                <span>Обо мне</span>
+            <div class="row">
+                <div class="col-lg-12 benefits__logo">
+                    Наши преимущества
+                </div>
             </div>
-            <div class="aboutme__wrapper">
-                <div class="aboutme__background">
-                    <div class="aboutme__background_title">
-                        Бэкграунд
+            <div class="row">
+                <div class="col-lg-4 benefits__wrapper">
+                    <img src="./img/help.png">
+                    <p class="benefits__title">
+                        Надежность
+                    </p>
+                    <div class="benefits__text">
+                        Мы всегда придем к вам на помощь
+                        <br>в решении самых неоднозначных
+                        <br>вопросов
                     </div>
-                    <div class="aboutme__background_text">
+                </div>
+                <div class="col-lg-4 benefits__wrapper">
+                    <img src="./img/bloknot.png">
+                    <p class="benefits__title">
+                        Достоверность
+                    </p>
+                    <div class="benefits__text">
+                        Достоверность - главный принцип
+                        <br>нашей работы. Мы знаем все тонкости
+                        <br>переезда в Болгарию и оформления
+                        <br>соответствующих документов
+                    </div>
+                </div>
+                <div class="col-lg-4 benefits__wrapper">
+                    <img src="./img/chel.png">
+                    <p class="benefits__title">
+                        Компетентность
+                    </p>
+                    <div class="benefits__text">
+                        Наши специалисты с большим опытом
+                        <br>работы помогут разобраться во всех
+                        <br>юридических тонкостях переезда
+                        <br>на ПМЖ в Болгарию
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 information__logo">
+                    Переезд в Болгарию
+                </div>
+                <div class="col-lg-12 information__quote">
+                    «Если Вам не нравится то место, где вы находитесь -
+                    смените его, Вы же не дерево»
+                    <br><span class="information__quote_span">
+                        Джим Рон
+                    </span>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 information__center">
+                    Пришло время и перед Вами стоит вопрос
+                    <img class="information__img" src="./img/krug.png">
+                    <img class="information__img_second" src="./img/krug.png">
+                    <br><span class="information__center_span">
+                        Как переехать в Болгарию на ВНЖ или ПМЖ?
+                    </span>
+                </div>
+                <div class="col-lg-12 information__answer">
+                    <span class="information__answer_span">
+                        Мы знаем ответ
+                    </span>
+                    <br> Подберем для Вас оптимальный вариант и предложим лучшие условия!
+                </div>
+                <div class="col-lg-12 information__button">
+                    <button class="button" type="submit">
+                        Узнать больше
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="col-lg-12 services__logo">
+                Недвижимость и транспортные услуги
+            </div>
+            <div class="col-lg-12">
+                <img class="services__img_first" src="./img/lol.png">
+                <img class="services__img_second" src="./img/first.png">
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 services__text">
+                <span class="services__text_span">
+                    Мечтаете о доме на Солнечном берегу?
+                </span>
+                <br>Или хотите выгодно инвестировать в
+                заграничную недвижимость? В любом случае -
+                <br>подходящий вариант уже ждет Вас! Большой выбор
+                объектов жилой и коммерческой
+                <br>недвижимости и профессиональный сервис позволит п
+                ровести сделку с
+                <br>удовольствием и получить нужный результат
+            </div>
+            <div class="col-lg-8 col-lg-offset-2  services__text-second">
+                <img class="services__img" src="./img/img.png">
+                Если Ваши чемоданы уже собраны и
+                Вы готовы к переезду, рады предложить Вам
+                <br>транспортные услуги по перевозке личный вещей в Болгарию.
+                Для успешного размещения
+                <br>на новом месте жительства мы поможем перевести
+                Ваши вещи в сохранности
+            </div>
+            <div class="col-lg-12 services__button">
+                <button class="button" type="submit">
+                    Узнать больше
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="review">
+        <div class="container">
+            <div class="col-lg-12 review__logo">
+                Отзывы наших клиентов
+            </div>
+            <div class="row">
+                <div class=" col-lg-8 col-lg-offset-2 review__wrapper">
+                    <img class="review__img_left" src="./img/left.png">
+                    <img class="review__img_wow" src="./img/wow.png">
+                    <img class="review__img_right" src="./img/right.png">
+                    <div class="review__title">
+                        Диана апасова
+                        <a class="review__link" href="#">
+                            vk.com/apasova
+                        </a>
+                        <p class=" review__title_text">
+                            Москва → София
+                        </p>
+                    </div>
+                    <div class="review__text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis.
-                        <br>
-                        <br>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui.
-                        <br>
-                        <br>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa quiis aute irure
-                        dolor in reprehenderit in is aute irure dolor in reprehenderit
-                        in is aute irure dolor in reprehenderit in.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in
                     </div>
                 </div>
-                <div class="aboutme__cover">
-                    <div class="aboutme__merit">
-                        <div class="aboutme__merit_title">
-                            Заслуги
-                        </div>
-                        <div class="aboutme__merit_cover">
-                            <div class="aboutme__merit_wrapper">
-                                <div class="about__merit_rhombus">
-                                    75
-                                </div>
-                                <p class="about__merit_text">
-                                    Реализованных проектов
-                                </p>
-                            </div>
-                            <div class="aboutme__merit_wrapper">
-                                <div class="about__merit_rhombus">
-                                    154
-                                </div>
-                                <p class="about__merit_text">
-                                    Положительных отзывов
-                                </p>
-                            </div>
-                            <div class="aboutme__merit_wrapper">
-                                <div class="about__merit_rhombus">
-                                    8
-                                </div>
-                                <p class="about__merit_text">
-                                    Лет
-                                    <br>опыта
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aboutme__connection_logo">
-                        Связь
-                    </div>
-                    <div class="aboutme__connection">
-                        <div class="aboutme__list">
-                            <a class="aboutme__link" href="#">
-                                freelance.ru/myname
-                            </a>
-                            <a class="aboutme__link" href="#">
-                                vk.com/12343
-                            </a>
-                            <a class="aboutme__link" href="#">
-                                info@sitename.ru
-                            </a>
-                        </div>
-                        <div class="aboutme__info">
-                            <div class="aboutme__img">
-                                <img src="./img/chel.png">
-                            </div>
-                            <div class="aboutme__text">
-                                <p>
-                                    <em>Не стесняйтесь, пишите</em>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <img class="review__bottom" src="./img/tochka.png">
                 </div>
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="question">
         <div class="container">
-            <div class="skills__logo">
-                Навыки
-            </div>
-            <div class="skills__wrapper">
-                <div class="skills__list">
-                    <div class="skills_item">
-                        98%
-                    </div>
-                    <div class="skills_text">
-                        Photoshop
-                    </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 question__logo">
+                    Есть вопросы
+                    <br>по переезду в болгарию?
                 </div>
-                <div class="skills__list">
-                    <div class="skills_item">
-                        99%
-                    </div>
-                    <div class="skills_text">
-                        html5
-                    </div>
+                <div class="col-lg-4 col-lg-offset-4 question__logo_text">
+                    Мы проконсультируем
+                    <br>Вас бесплатно!
                 </div>
-                <div class="skills__list">
-                    <div class="skills_item">
-                        100%
-                    </div>
-                    <div class="skills_text">
-                        css3
-                    </div>
+                <div class="col-lg-2 col-lg-offset-5">
+                    <img class="question__img" src="./img/krug__bottom.png">
                 </div>
-                <div class="skills__list">
-                    <div class="skills_item">
-                        0%
-                    </div>
-                    <div class="skills_text">
-                        Лень
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="work">
-        <div class="container">
-            <div class="work__logo">
-                Работы
-            </div>
-            <div class="work__img">
-                <div class="work__wrapper">
-                    <img class="work__img_item" src="./img/forest.png">
-                    <div class="work__overlay">
-                        <p class="work__overlay_text">
-                            beautiful
-                        </p>
-                        <a class="work__overlay_link" href="#">
-                            Смотреть
-                        </a>
-                    </div>
-                </div>
-                <div class="work__wrapper">
-                    <img class="work__img_item" src="./img/animal.png">
-                    <div class="work__overlay">
-                        <p class="work__overlay_text">
-                            deer
-                        </p>
-                        <a class="work__overlay_link" href="#">
-                            Смотреть
-                        </a>
-                    </div>
-                </div>
-                <div class="work__wrapper">
-                    <img class="work__img_item" src="./img/show.png">
-                    <div class="work__overlay">
-                        <p class="work__overlay_text">
-                            home
-                        </p>
-                        <a class="work__overlay_link" href="#">
-                            Смотреть
-                        </a>
-                    </div>
+                <div class="col-lg-4 col-lg-offset-4 question__logo_text">
+                    <input class="question__input" placeholder="Имя" type="text">
+                    <input class="question__input" placeholder="E-mail" type="email">
+                    <input class="question__input" placeholder="Телефон" type="tel">
+                    <button class="question__button">
+                        Заказать консультацию
+                    </button>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <div class="footer">
-                2017-2099 / Смотрю в будущее
+            <div class="row">
+                <div class="footer__wrapper">
+                    <div class="col-lg-2 footer__img">
+                        <img src="./img/logo_footer.png">
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-1 footer__title">
+                        2016 / Все права защищены
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-1 footer__text">
+                        <a href="#" class="footer__text_link">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-1">
+                        <div class="footer__phone">
+                            <img class="footer__img" src="./img/footer__phone.png">
+                            <div class="footer__phone_link">
+                                <a href="+749512321345" class="footer__link">
+                                    +7 (495) 12-321-345
+                                </a>
+                                <a href="+749512321345" class="footer__link">
+                                    +7 (495) 12-321-345
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
