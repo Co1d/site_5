@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: url("../img/fon.png") no-repeat;
+  background: url("../img/fon.png") no-repeat 25% 10%;
 
   .row {
     display: flex;
@@ -15,21 +15,24 @@ header {
     background: url("../img/polosa.png") no-repeat 50% -115%;
   }
 
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
   .header__nav {
     color: #FFFFFF;
   }
 
   .header__ul {
     display: flex;
+    margin-right: 10px;
     justify-content: space-between;
     text-align: center;
     list-style: none;
     padding: 0;
-  }
-
-  header__ul:hover {
-    background: #365d71;
-    display: block;
   }
 
   .header__ul_li {
@@ -44,6 +47,14 @@ header {
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 10px 5px;
+    margin-right: 25px;
+
+    &:hover {
+      content: '';
+      display: block;
+      background: #365d71;
+    }
   }
 
   .header__phone {
@@ -79,12 +90,12 @@ header {
   .header__span {
     text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
     font-family: MuseoSansCyrl;
-    font-size: 90px;
+    font-size: 51px;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.91;
-    letter-spacing: 41.4px;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
   }
@@ -101,8 +112,8 @@ header {
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
     text-transform: uppercase;
-    margin-top: 204px;
-    margin-bottom: 168px;
+    margin-top: 84px;
+    margin-bottom: 200px;
   }
 
   .header__title_second {
@@ -115,12 +126,12 @@ header {
     color: #FFFFFF;
     margin-top: 84px;
     margin-bottom: 41px;
-    text-transform: uppercase;
   }
 
   .header__button_img {
-    text-align: center;
-    margin-bottom: 98px;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
   }
 
 }
@@ -135,6 +146,8 @@ header {
     margin-top: -65px;
     height: 717px;
     margin-bottom: 90px;
+    width: 1030px;
+    margin-left: 135px;
   }
 
   .contact_cup {
@@ -151,6 +164,10 @@ header {
     margin-top: 54px;
     margin-bottom: 135px;
     }
+
+  .contact__items {
+    margin-left: -70px;
+  }
 
   .contact__item {
     display: flex;
@@ -195,7 +212,7 @@ header {
     height: 530px;
     position: absolute;
     top: 20%;
-    right: -5%;
+    right: -12%;
 
     .question__logo {
       font-family: MuseoSansCyrl;
@@ -275,11 +292,11 @@ header {
 
 footer {
   background: url("../img/footer.png") no-repeat center bottom;
-  background-size: cover;
 
   .footer__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .footer__title {

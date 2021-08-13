@@ -7,13 +7,20 @@ body {
 }
 
 header {
-  background: url("../img/fon.png") no-repeat;
+  background: url("../img/fon.png") no-repeat 25% 10%;
 
   .row {
     display: flex;
     align-items: center;
     background: url("../img/polosa.png") no-repeat 50% -115%;
   }
+
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 
   .header__nav {
     color: #FFFFFF;
@@ -26,11 +33,6 @@ header {
     text-align: center;
     list-style: none;
     padding: 0;
-  }
-
-  header__ul:hover {
-    background: #365d71;
-    display: block;
   }
 
   .header__ul_li {
@@ -46,7 +48,17 @@ header {
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 10px 5px;
+    margin-right: 25px;
+
+    &:hover {
+      content: '';
+      display: block;
+      background: #365d71;
+    }
   }
+
+
 
   .header__phone {
     display: flex;
@@ -97,7 +109,7 @@ header {
     color: rgba(255, 255, 255, 0.91);
     text-transform: uppercase;
     margin-top: 204px;
-    margin-bottom: 168px;
+    margin-bottom: 312px;
   }
 
   .header__title_second {
@@ -113,8 +125,9 @@ header {
   }
 
   .header__button_img {
-    text-align: center;
-    margin-bottom: 98px;
+   position: absolute;
+   bottom: 15%;
+    left: 50%;
   }
 
 }
@@ -223,13 +236,13 @@ header {
     .information__img {
     position: absolute;
       left: 48%;
-      top: -10%;
+      top: 33%;
     }
 
     .information__img_second {
       position: absolute;
       left: 48%;
-      bottom: -10%;
+      bottom: 41%;
     }
 
     .information__center_span {
@@ -285,6 +298,8 @@ header {
 }
 
 #services {
+  background: url("../img/city.png") no-repeat;
+  background-size: cover;
 
   .services__logo {
     font-family: MuseoSansCyrl;
@@ -302,14 +317,14 @@ header {
       position: absolute;
       z-index: 3;
       right: 39%;
-      top: 9500%;
+      top: 23%;
     }
 
     .services__img_second {
       position: absolute;
       z-index: 5;
       right: 42%;
-      top: 4000%;
+      top: 16%;
     }
 
   .services__text {
@@ -327,6 +342,8 @@ header {
     margin-top: 150px;
     z-index: 4;
     position: relative;
+    width: 765px;
+    margin-left: 225px;
   }
 
   .services__text_span {
@@ -351,12 +368,14 @@ header {
     box-shadow: 1px 1.7px 4px 0 rgba(149, 147, 147, 0.33);
     background-color: #f4f4f4;
     padding: 43px 25px;
+    width: 765px;
+    margin-left: 225px;
   }
 
   .services__img {
     position: absolute;
     right: 47%;
-    top: -25%;
+    top: 54%;
     z-index: 5;
   }
 
@@ -392,6 +411,7 @@ header {
     text-align: center;
     color: #000;
     margin-bottom: 67px;
+    margin-top: 89px;
   }
 
   .review__img_left {
@@ -475,8 +495,8 @@ header {
 
   .review__bottom {
     margin-top: 51px;
-    right: 85%;
     margin-bottom: 89px;
+    margin-left: 590px;
   }
 }
 
@@ -496,7 +516,7 @@ header {
     text-transform: uppercase;
   }
 
-  .question__logo_text {
+  .question__logo_title {
     font-family: MuseoSansCyrl;
     font-size: 21px;
     font-weight: 100;
@@ -510,8 +530,25 @@ header {
   }
 
   .question__img {
-    margin-left: 75px;
+    margin-left: 395px;
     margin-bottom: 30px;
+  }
+
+  .question__logo_text {
+    font-family: MuseoSansCyrl;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 1.29;
+    letter-spacing: 2.1px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-left: 230px;
   }
 
   .question__input {
@@ -526,9 +563,12 @@ header {
     line-height: 2.69;
     letter-spacing: 1.3px;
     text-align: left;
-    color: rgba(255, 255, 255, 0.56);
     margin-bottom: 10px;
     outline: none;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.56);
+    }
   }
 
   .question__button {
@@ -544,6 +584,7 @@ header {
     padding: 15px 60px 15px 60px;
     margin-top: 20px;
     margin-bottom: 84px;
+    border-radius: 3px;
   }
 }
 
@@ -553,6 +594,7 @@ footer {
   .footer__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .footer__title {

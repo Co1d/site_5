@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: url("../img/fon.png") no-repeat;
+  background: url("../img/fon.png") no-repeat 25% 10%;
 
   .row {
     display: flex;
@@ -15,21 +15,24 @@ header {
     background: url("../img/polosa.png") no-repeat 50% -115%;
   }
 
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
   .header__nav {
     color: #FFFFFF;
   }
 
   .header__ul {
     display: flex;
+    margin-right: 10px;
     justify-content: space-between;
     text-align: center;
     list-style: none;
     padding: 0;
-  }
-
-  header__ul:hover {
-    background: #365d71;
-    display: block;
   }
 
   .header__ul_li {
@@ -44,6 +47,14 @@ header {
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 10px 5px;
+    margin-right: 25px;
+
+    &:hover {
+      content: '';
+      display: block;
+      background: #365d71;
+    }
   }
 
   .header__phone {
@@ -79,12 +90,12 @@ header {
   .header__span {
     text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
     font-family: MuseoSansCyrl;
-    font-size: 90px;
+    font-size: 51px;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.91;
-    letter-spacing: 41.4px;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
   }
@@ -101,8 +112,8 @@ header {
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
     text-transform: uppercase;
-    margin-top: 204px;
-    margin-bottom: 168px;
+    margin-top: 84px;
+    margin-bottom: 200px;
   }
 
   .header__title_second {
@@ -115,12 +126,12 @@ header {
     color: #FFFFFF;
     margin-top: 84px;
     margin-bottom: 41px;
-    text-transform: uppercase;
   }
 
   .header__button_img {
-    text-align: center;
-    margin-bottom: 98px;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
   }
 
 }
@@ -132,6 +143,7 @@ header {
     box-shadow: 0px 3px 1px 0 rgba(159, 160, 160, 0.18);
     background-color: #fff;
     margin-top: -65px;
+    margin-bottom: 88px;
   }
 
   .moving__title {
@@ -142,12 +154,21 @@ header {
     letter-spacing: 0.34px;
     text-align: center;
     color: #000;
-    margin-top: 46px;
+    padding-top: 46px;
     margin-bottom: 58px;
   }
 
   .moving__title_span {
     font-weight: 900;
+  }
+
+  .moving__cover_top {
+    display: flex;
+  }
+
+  .moving__img-first {
+    margin-left: 88px;
+    margin-right: 52px;
   }
 
   .moving__text-first {
@@ -161,6 +182,10 @@ header {
     margin-bottom: 57px;
   }
 
+  .moving__cover_bottom {
+    display: flex;
+  }
+
   .moving__text-second {
     font-family: MuseoSansCyrl;
     font-size: 16px;
@@ -168,9 +193,12 @@ header {
     line-height: 1.44;
     text-align: left;
     color: rgba(0, 0, 0, 0.8);
-    margin-top: 108px;
-    margin-left: 200px;
-    margin-bottom: 121px;
+    margin: 108px 79px 121px 79px;
+  }
+
+  .moving__img-second {
+    margin-top: 20px;
+    margin-bottom: 65px;
   }
 
 }
@@ -191,17 +219,7 @@ header {
     text-transform: uppercase;
   }
 
-  .question__logo_span {
-    font-family: MuseoSansCyrl;
-    font-size: 21px;
-    font-weight: 100;
-    line-height: 1.81;
-    letter-spacing: 2.1px;
-    text-align: center;
-    color: #fff;
-  }
-
-  .question__logo_text {
+  .question__logo_title {
     font-family: MuseoSansCyrl;
     font-size: 21px;
     font-weight: 100;
@@ -215,9 +233,25 @@ header {
   }
 
   .question__img {
-    margin-top: 45px;
-    margin-left: 75px;
+    margin-left: 395px;
     margin-bottom: 30px;
+  }
+
+  .question__logo_text {
+    font-family: MuseoSansCyrl;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 1.29;
+    letter-spacing: 2.1px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-left: 230px;
   }
 
   .question__input {
@@ -232,9 +266,12 @@ header {
     line-height: 2.69;
     letter-spacing: 1.3px;
     text-align: left;
-    color: rgba(255, 255, 255, 0.56);
     margin-bottom: 10px;
     outline: none;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.56);
+    }
   }
 
   .question__button {
@@ -246,21 +283,21 @@ header {
     text-align: center;
     color: #fff;
     background: 0 0;
-    border: solid 2px #fff;
+    border: solid #fff;
     padding: 15px 60px 15px 60px;
     margin-top: 20px;
     margin-bottom: 84px;
-    border-radius: 4px;
+    border-radius: 3px;
   }
 }
 
 footer {
   background: url("../img/footer.png") no-repeat center bottom;
-  background-size: cover;
 
   .footer__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .footer__title {
@@ -320,11 +357,5 @@ footer {
     text-align: left;
   }
 
-  .footer__link:after {
-    content: '';
-    display: block;
-    border: dashed 1px;
-    color: #FFFFFF;
-  }
 
 }
