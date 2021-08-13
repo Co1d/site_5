@@ -7,12 +7,13 @@ body {
 }
 
 header {
-  background: url("../img/fon.png") no-repeat 25% 10%;
+  background: url("../img/polosa.png") no-repeat 50% -115%;
+  z-index: 5;
+  position: relative;
 
   .row {
     display: flex;
     align-items: center;
-    background: url("../img/polosa.png") no-repeat 50% -115%;
   }
 
   .header__wrapper {
@@ -36,6 +37,7 @@ header {
   }
 
   .header__ul_li {
+    margin-right: 10px;
     color: #FFFFFF;
     font-family: MuseoSansCyrl;
     font-size: 11px;
@@ -136,6 +138,61 @@ header {
 
 }
 
+#first {
+  background: url("../img/fon.png") no-repeat 25% 10%;
+  margin-top: -75px;
+  z-index: 1;
+  position: relative;
+
+  .header__span {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+  }
+
+  .header__title {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    letter-spacing: 10.2px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+    text-transform: uppercase;
+    margin-top: 161px;
+    margin-bottom: 213px;
+  }
+
+  .header__title_second {
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 84px;
+    margin-bottom: 41px;
+  }
+
+  .header__button_img {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+  }
+
+}
+
 #contact {
   position: relative;
   background-color: #f7f7f7;
@@ -144,14 +201,15 @@ header {
     box-shadow: 0 3px 1px 0 rgba(159, 160, 160, 0.18);
     background-color: #fff;
     margin-top: -65px;
-    height: 717px;
+    height: 777px;
     margin-bottom: 90px;
-    width: 1030px;
-    margin-left: 135px;
+    padding: 54px 101px 62px 113px;
   }
 
   .contact_cup {
-  display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   h2 {
@@ -161,13 +219,8 @@ header {
     line-height: 1.35;
     text-align: center;
     color: #000;
-    margin-top: 54px;
-    margin-bottom: 135px;
+    margin-bottom: 56px;
     }
-
-  .contact__items {
-    margin-left: -70px;
-  }
 
   .contact__item {
     display: flex;
@@ -210,9 +263,6 @@ header {
     background-size: cover;
     width: 390px;
     height: 530px;
-    position: absolute;
-    top: 20%;
-    right: -12%;
 
     .question__logo {
       font-family: MuseoSansCyrl;
@@ -270,6 +320,10 @@ header {
       color: rgba(255, 255, 255, 0.56);
       margin-bottom: 10px;
       outline: none;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.56);
+      }
     }
 
     .question__button {

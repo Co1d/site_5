@@ -7,12 +7,13 @@ body {
 }
 
 header {
-  background: url("../img/fon.png") no-repeat 25% 10%;
+  background: url("../img/polosa.png") no-repeat 50% -115%;
+  z-index: 5;
+  position: relative;
 
   .row {
     display: flex;
     align-items: center;
-    background: url("../img/polosa.png") no-repeat 50% -115%;
   }
 
   .header__wrapper {
@@ -36,6 +37,7 @@ header {
   }
 
   .header__ul_li {
+    margin-right: 10px;
     color: #FFFFFF;
     font-family: MuseoSansCyrl;
     font-size: 11px;
@@ -114,6 +116,61 @@ header {
     text-transform: uppercase;
     margin-top: 84px;
     margin-bottom: 200px;
+  }
+
+  .header__title_second {
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 84px;
+    margin-bottom: 41px;
+  }
+
+  .header__button_img {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+  }
+
+}
+
+#first {
+  background: url("../img/fon.png") no-repeat 25% 10%;
+  margin-top: -75px;
+  z-index: 1;
+  position: relative;
+
+  .header__span {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+  }
+
+  .header__title {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    letter-spacing: 10.2px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+    text-transform: uppercase;
+    margin-top: 161px;
+    margin-bottom: 213px;
   }
 
   .header__title_second {
@@ -232,8 +289,11 @@ header {
     text-transform: uppercase;
   }
 
+  .question__photo {
+    text-align: center;
+  }
+
   .question__img {
-    margin-left: 395px;
     margin-bottom: 30px;
   }
 
@@ -244,14 +304,12 @@ header {
     line-height: 1.29;
     letter-spacing: 2.1px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 35px;
     color: #fff;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     width: 370px;
-    margin-left: 230px;
+    margin: 0 auto;
   }
 
   .question__input {

@@ -7,12 +7,13 @@ body {
 }
 
 header {
-  background: url("../img/fon.png") no-repeat 25% 10%;
+  background: url("../img/polosa.png") no-repeat 50% -115%;
+  z-index: 5;
+  position: relative;
 
   .row {
     display: flex;
     align-items: center;
-    background: url("../img/polosa.png") no-repeat 50% -115%;
   }
 
   .header__wrapper {
@@ -137,6 +138,61 @@ header {
 
 }
 
+#first {
+  background: url("../img/fon.png") no-repeat 25% 10%;
+  margin-top: -75px;
+  z-index: 1;
+  position: relative;
+
+  .header__span {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+  }
+
+  .header__title {
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    letter-spacing: 10.2px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.91);
+    text-transform: uppercase;
+    margin-top: 161px;
+    margin-bottom: 213px;
+  }
+
+  .header__title_second {
+    font-family: MuseoSansCyrl;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 10.2px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 84px;
+    margin-bottom: 41px;
+  }
+
+  .header__button_img {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+  }
+
+}
+
 #partner {
   background-color: #f7f7f7;
 
@@ -165,6 +221,9 @@ header {
 
   .partner__center {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 65px 154px 58px 154px;
   }
 
   .partner__title {
@@ -175,9 +234,6 @@ header {
     text-align: left;
     color: #000;
     text-transform: uppercase;
-    margin-top: 72px;
-    margin-left: 154px;
-    margin-right: 42px;
   }
 
   .partner__title_text {
@@ -193,7 +249,6 @@ header {
     letter-spacing: 10.53px;
     text-align: left;
     color: #bdbdbd;
-    margin-top: 100px;
     white-space: nowrap;
     text-transform: uppercase;
   }
@@ -205,9 +260,6 @@ header {
     letter-spacing: 3.6px;
     text-align: left;
     color: #000;
-    margin-top: 70px;
-    margin-left: 45px;
-    margin-bottom: 60px;
     text-transform: uppercase;
   }
 
@@ -217,7 +269,7 @@ header {
     color: #23aae2;
   }
 
-  .partner__button {
+  .partner__div {
     font-family: MuseoSansCyrl;
     font-size: 23px;
     font-weight: 900;
@@ -249,6 +301,7 @@ header {
 
   .partner__block_wrapper {
     display: flex;
+    justify-content: space-evenly;
   }
 
   .partner__wrapper {
@@ -258,15 +311,12 @@ header {
     background-color: #f4f4f4;
     width: 433px;
     height: 510px;
-    margin-left: 60px;
     margin-bottom: 74px;
   }
 
   .partner__wrapper_second {
-    margin-left: 31px;
     box-shadow: 1px 1.7px 4px 0 rgba(149, 147, 147, 0.33);
     background-color: #f4f4f4;
-    margin-bottom: 74px;
     width: 433px;
     height: 510px;
   }
@@ -343,8 +393,11 @@ header {
     text-transform: uppercase;
   }
 
+  .question__photo {
+    text-align: center;
+  }
+
   .question__img {
-    margin-left: 395px;
     margin-bottom: 30px;
   }
 
@@ -355,14 +408,12 @@ header {
     line-height: 1.29;
     letter-spacing: 2.1px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 35px;
     color: #fff;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     width: 370px;
-    margin-left: 230px;
+    margin: 0 auto;
   }
 
   .question__input {
