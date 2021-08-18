@@ -519,7 +519,7 @@ header {
   }
 
   .question__input {
-    padding: 15px 170px 15px 30px;
+    padding: 15px 10px 15px 30px;
     border-radius: 3px;
     border: solid 1px #fff;
     background-color: #30c2ff;
@@ -535,6 +535,12 @@ header {
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.56);
+    }
+
+    &:hover {
+      box-shadow: 0 0 35px 0 rgba(14, 14, 14, 0.3);
+      border: solid 1px #fff;
+      background-color: #30c2ff;
     }
 
     @include r(767) {
