@@ -65,25 +65,23 @@ body {
   color: #F31010;
 }
 
-.container {
-  width: 1255px;
-  position: relative;
-  margin: 0 auto;
-  z-index: 11;
-
-  @include r(1199) {
-    width: 740px;
-    padding: 0 17px;
-    box-sizing: border-box;
-  }
-
-  @include r(767) {
-    width: 320px;
-    min-width: 320px;
-  }
-
-
-}
+//.container {
+//  width: 1255px;
+//  position: relative;
+//  margin: 0 auto;
+//  z-index: 11;
+//
+//  @include r(1199) {
+//    width: 740px;
+//    padding: 0 17px;
+//    box-sizing: border-box;
+//  }
+//
+//  @include r(767) {
+//    width: 320px;
+//    min-width: 320px;
+//  }
+//}
 
 .block__title {
   font-weight: 900;

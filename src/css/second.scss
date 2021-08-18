@@ -22,6 +22,9 @@ header {
     justify-content: space-between;
   }
 
+  .header__logo {
+    margin-right: -10px;
+  }
 
   .header__nav {
     color: #FFFFFF;
@@ -34,6 +37,10 @@ header {
     text-align: center;
     list-style: none;
     padding: 0;
+
+    @include r(1199) {
+      display: none;
+    }
   }
 
   .header__ul_li {
@@ -62,6 +69,10 @@ header {
   .header__phone {
     display: flex;
     align-items: center;
+
+    @include r(767) {
+      display: none;
+    }
   }
 
 
@@ -82,11 +93,16 @@ header {
     text-align: left;
   }
 
-  .header__link:after {
-    content: '';
-    display: block;
-    border: dashed 1px;
-    color: #FFFFFF;
+  .header__img {
+    display: none;
+
+    @include r(1199) {
+      display: block;
+    }
+
+    @include r(767) {
+      display: block;
+    }
   }
 
   .header__span {
@@ -100,6 +116,7 @@ header {
     letter-spacing: 10.2px;
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
+
   }
 
   .header__title {
@@ -134,6 +151,11 @@ header {
     position: absolute;
     bottom: 28%;
     left: 50%;
+
+    @include r(767) {
+      bottom: 25%;
+      left: 43%;
+    }
   }
 
 }
@@ -155,6 +177,10 @@ header {
     letter-spacing: 10.2px;
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
+
+    @include r(767) {
+      font-size: 45px;
+    }
   }
 
   .header__title {
@@ -189,6 +215,11 @@ header {
     position: absolute;
     bottom: 28%;
     left: 50%;
+
+    @include r(767) {
+      bottom: 27%;
+      left: 44%;
+    }
   }
 
 }
@@ -200,6 +231,17 @@ header {
     background-color: #fff;
     margin-top: -70px;
     margin-bottom: 79px;
+    z-index: 6;
+    position: relative;
+
+    @include r(1199) {
+      margin-top: 0;
+      background-color: #f7f7f7;
+    }
+
+    @include r(767) {
+      background-color: #FFFFFF;
+    }
   }
 
   .partner__logo {
@@ -224,6 +266,16 @@ header {
     align-items: center;
     justify-content: space-evenly;
     padding: 65px 154px 58px 154px;
+
+    @include r(1199) {
+      justify-content: space-evenly;
+      margin: 65px 0 58px 0;
+      padding: 0;
+    }
+
+    @include r(767) {
+      flex-direction: column;
+    }
   }
 
   .partner__title {
@@ -234,6 +286,10 @@ header {
     text-align: left;
     color: #000;
     text-transform: uppercase;
+
+    @include r(767) {
+      margin-bottom: 20px;
+    }
   }
 
   .partner__title_text {
@@ -251,6 +307,10 @@ header {
     color: #bdbdbd;
     white-space: nowrap;
     text-transform: uppercase;
+
+    @include r(767) {
+      margin-bottom: 20px;
+    }
   }
 
   .partner__item {
@@ -286,6 +346,15 @@ header {
     border: #FFFFFF;
     margin-bottom: 65px;
     width: 1015px;
+
+    @include r(1199) {
+      width: 100%;
+      padding: 30px 145px 30px 150px;
+    }
+
+    @include r(767) {
+      padding: 30px 0 30px 10px;
+    }
   }
 
   .partner__center_title {
@@ -297,11 +366,20 @@ header {
     color: rgba(0, 0, 0, 0.99);
     white-space: nowrap;
     margin-bottom: 50px;
+    text-transform: uppercase;
+
+    @include r(767) {
+      white-space: normal;
+    }
   }
 
   .partner__block_wrapper {
     display: flex;
     justify-content: space-evenly;
+
+    @include r(767) {
+      flex-direction: column;
+    }
   }
 
   .partner__wrapper {
@@ -312,6 +390,12 @@ header {
     width: 433px;
     height: 510px;
     margin-bottom: 74px;
+
+    @include r(1199) {
+      margin-right: 19px;
+      width: 360px;
+      height: 600px;
+    }
   }
 
   .partner__wrapper_second {
@@ -319,6 +403,12 @@ header {
     background-color: #f4f4f4;
     width: 433px;
     height: 510px;
+
+    @include r(1199) {
+      width: 360px;
+      height: 600px;
+      font-size: 15px;
+    }
   }
 
   .partner__wrapper_img {
@@ -327,6 +417,10 @@ header {
     margin-top: 37px;
     width: 134px;
     height: 134px;
+
+    @include r(1199) {
+      margin-left: 120px;
+    }
   }
 
   .partner__wrapper_title {
@@ -348,6 +442,10 @@ header {
     margin-left: 198px;
     margin-top: 18px;
     margin-bottom: 5px;
+
+    @include r(1199) {
+      margin-left: 170px;
+    }
   }
 
   .partner__wrapper_text {
@@ -361,6 +459,11 @@ header {
     padding: 0 33px 41px 33px;
     width: 433px;
     height: 222px;
+
+    @include r(1199) {
+      width: 360px;
+      font-size: 15px;
+    }
   }
   }
 
@@ -434,6 +537,10 @@ header {
     &::placeholder {
       color: rgba(255, 255, 255, 0.56);
     }
+
+    @include r(767) {
+      width: 350px;
+    }
   }
 
   .question__button {
@@ -450,6 +557,10 @@ header {
     margin-top: 20px;
     margin-bottom: 84px;
     border-radius: 3px;
+
+    @include r(767) {
+      width: 350px;
+    }
   }
 }
 
@@ -479,6 +590,10 @@ footer {
     text-align: center;
     color: rgba(250, 247, 247, 0.76);
     white-space: nowrap;
+
+    @include r(767) {
+      display: none;
+    }
   }
 
   .footer__text_link {
@@ -496,6 +611,10 @@ footer {
   .footer__phone {
     display: flex;
     align-items: center;
+
+    @include r(1199) {
+      display: none;
+    }
   }
 
   .footer__img {

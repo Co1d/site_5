@@ -22,18 +22,20 @@ header {
     justify-content: space-between;
   }
 
-
   .header__nav {
     color: #FFFFFF;
   }
 
   .header__ul {
     display: flex;
-    margin-right: 10px;
     justify-content: space-between;
     text-align: center;
     list-style: none;
     padding: 0;
+
+    @include r(1199) {
+      display: none;
+    }
   }
 
   .header__ul_li {
@@ -62,6 +64,10 @@ header {
   .header__phone {
     display: flex;
     align-items: center;
+
+    @include r(767) {
+      display: none;
+    }
   }
 
 
@@ -87,6 +93,22 @@ header {
     display: block;
     border: dashed 1px;
     color: #FFFFFF;
+
+    @include r(1199) {
+      display: none;
+    }
+  }
+
+  .header__img {
+    display: none;
+
+    @include r(1199) {
+      display: block;
+    }
+
+    @include r(767) {
+      display: block;
+    }
   }
 
   .header__span {
@@ -165,7 +187,7 @@ header {
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.91;
+    line-height: 1.5;
     text-align: center;
     color: rgba(255, 255, 255, 0.91);
     text-transform: uppercase;
@@ -204,12 +226,30 @@ header {
     height: 777px;
     margin-bottom: 90px;
     padding: 54px 101px 62px 113px;
+    z-index: 6;
+    position: relative;
+
+    @include r(1199) {
+      margin-top: 0;
+      background-color: #f7f7f7;
+      margin-bottom: 0;
+    }
+
+    @include r(767) {
+      height: auto;
+    }
+
   }
 
   .contact_cup {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include r(767) {
+      flex-direction: column;
+      //margin-bottom: 300px;
+    }
   }
 
   h2 {
@@ -370,6 +410,10 @@ footer {
     text-align: center;
     color: rgba(250, 247, 247, 0.76);
     white-space: nowrap;
+
+    @include r(767) {
+      display: none;
+    }
   }
 
   .footer__text_link {
@@ -381,12 +425,15 @@ footer {
     content: '';
     display: block;
     border: #fff dashed 1px;
-
   }
 
   .footer__phone {
     display: flex;
     align-items: center;
+
+    @include r(1199) {
+      display: none;
+    }
   }
 
   .footer__img {
