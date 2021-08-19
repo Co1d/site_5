@@ -27,6 +27,10 @@ header {
     }
   }
 
+  .header__logo {
+    margin-right: 19px;
+  }
+
   .header__nav {
     color: #FFFFFF;
 
@@ -81,6 +85,7 @@ header {
 
     @include r(1199) {
       display: flex;
+      margin-right: -470px;
     }
 
     @include r(767) {
@@ -309,11 +314,13 @@ header {
     margin-top: 17px;
     margin-bottom: 20px;
     width: 37px;
-    margin-left: 125px;
+    margin-right: auto;
+    margin-left: auto;
     color: #c6c6c6;
 
     @include r(1199) {
-      margin-left: 125px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
   }
@@ -567,7 +574,7 @@ header {
 
   .services__text {
     font-family: MuseoSansCyrl;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 1.47;
     letter-spacing: normal;
@@ -610,7 +617,7 @@ header {
 
   .services__text-second {
     font-family: MuseoSansCyrl;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 1.29;
     letter-spacing: normal;
@@ -836,18 +843,16 @@ header {
     }
   }
 
+  .review__bottom_wrapper {
+    text-align: center;
+  }
+
   .review__bottom {
     margin-top: 51px;
     margin-bottom: 89px;
-    margin-left: 590px;
 
     @include r(1199) {
       margin-bottom: 61px;
-      margin-left: 425px;
-    }
-
-    @include r(767) {
-      margin-left: 138px;
     }
   }
 }
@@ -960,6 +965,14 @@ footer {
   background: url("../img/footer.png") no-repeat center bottom;
   background-size: cover;
 
+  @include r(1199) {
+    background-size: auto;
+  }
+
+  @include r(767) {
+    background-size: auto;
+  }
+
   .footer__wrapper {
     display: flex;
     align-items: center;
@@ -994,11 +1007,11 @@ footer {
     text-decoration: none;
   }
 
-  footer__text_link:after {
+  .footer__text_link:after {
     content: '';
     display: block;
     border: #fff dashed 1px;
-
+    opacity: 0.61;
   }
 
   .footer__phone {

@@ -65,6 +65,10 @@ header {
     display: flex;
     align-items: center;
 
+    @include r(1199) {
+      margin-right: -220px;
+    }
+
     @include r(767) {
       display: none;
     }
@@ -229,6 +233,8 @@ header {
     margin-bottom: 88px;
     z-index: 6;
     position: relative;
+    padding-right: 60px;
+    padding-left: 60px;
 
     @include r(1199) {
       margin-top: 0;
@@ -269,6 +275,10 @@ header {
     @include r(767) {
       margin: 0;
     }
+
+    img {
+      width: 225px;
+    }
   }
 
   .moving__text-first {
@@ -291,7 +301,6 @@ header {
 
     @include r(767) {
       flex-direction: column-reverse;
-      text-align: center;
     }
   }
 
@@ -318,8 +327,11 @@ header {
     @include r(767) {
       width: 368px;
     }
-  }
 
+    img {
+      width: 225px;
+    }
+  }
 }
 
 #question {
@@ -462,11 +474,11 @@ footer {
     text-decoration: none;
   }
 
-  footer__text_link:after {
+  .footer__text_link:after {
     content: '';
     display: block;
     border: #fff dashed 1px;
-
+    opacity: 0.61;
   }
 
   .footer__phone {

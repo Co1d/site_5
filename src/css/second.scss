@@ -23,7 +23,7 @@ header {
   }
 
   .header__logo {
-    margin-right: -10px;
+    margin-right: 7px;
   }
 
   .header__nav {
@@ -69,6 +69,10 @@ header {
   .header__phone {
     display: flex;
     align-items: center;
+
+    @include r(1199) {
+      margin-right: -220px;
+    }
 
     @include r(767) {
       display: none;
@@ -265,7 +269,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 65px 154px 58px 154px;
+    padding: 65px 0 58px 0;
 
     @include r(1199) {
       justify-content: space-evenly;
@@ -317,7 +321,6 @@ header {
     font-family: MuseoSansCyrl;
     font-size: 29px;
     font-weight: 900;
-    letter-spacing: 3.6px;
     text-align: left;
     color: #000;
     text-transform: uppercase;
@@ -456,8 +459,6 @@ header {
     text-align: justify;
     color: rgba(0, 0, 0, 0.8);
     padding: 0 33px 41px 33px;
-    width: 433px;
-    height: 222px;
 
     @include r(1199) {
       width: 360px;
@@ -606,11 +607,11 @@ footer {
     text-decoration: none;
   }
 
-  footer__text_link:after {
+  .footer__text_link:after {
     content: '';
     display: block;
     border: #fff dashed 1px;
-
+    opacity: 0.61;
   }
 
   .footer__phone {
