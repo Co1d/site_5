@@ -10,6 +10,7 @@ header {
   background: url("../img/polosa.png") no-repeat 50% -115%;
   z-index: 5;
   position: relative;
+  background-size: cover;
 
   .row {
     display: flex;
@@ -58,6 +59,7 @@ header {
       content: '';
       display: block;
       background: #365d71;
+      border-radius: 3px;
     }
   }
 
@@ -166,9 +168,10 @@ header {
 
 #first {
   background: url("../img/fon.png") no-repeat 25% 10%;
-  margin-top: -75px;
+  margin-top: -80px;
   z-index: 1;
   position: relative;
+  background-size: cover;
 
   .header__span {
     text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
@@ -396,6 +399,15 @@ header {
 
 footer {
   background: url("../img/footer.png") no-repeat center bottom;
+  background-size: cover;
+
+  @include r(1199) {
+    background-size: auto;
+  }
+
+  @include r(767) {
+    background-size: auto;
+  }
 
   .footer__wrapper {
     display: flex;
