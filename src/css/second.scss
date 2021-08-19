@@ -574,8 +574,7 @@ header {
 }
 
 footer {
-  background: url("../img/footer.png") no-repeat center bottom;
-  background-size: cover;
+  background-color: #23aae2;
 
   @include r(1199) {
     background-size: auto;
